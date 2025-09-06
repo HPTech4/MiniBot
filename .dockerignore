@@ -1,0 +1,15 @@
+# Git
+.git
+.gitignore
+
+# IDE directories
+.vscode
+.idea
+
+# Node modules (if you add any in future)
+node_modules
+
+# Other
+README.md
+*.log
+.DS_Store
