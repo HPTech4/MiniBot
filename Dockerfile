@@ -1,16 +1,17 @@
-# Official nginx image as base
+# Use official lightweight nginx image
 FROM nginx:alpine
 
-# work directory inside nginx
-WORKDIR /usr/share/nginx/html/
+# Set working directory
+WORKDIR /usr/share/nginx/html
 
-# Copy the application files to the work dir
+# Remove default nginx static files (welcome page)
+RUN rm -rf ./*
+
+# Copy your frontend files into nginx
 COPY . .
-
 
 # Expose port 80
 EXPOSE 80
 
-# Start nginx in the foreground
+# Run nginx in foreground
 CMD ["nginx", "-g", "daemon off;"]
-

@@ -17,14 +17,14 @@ const responses = {
 3. ${categories.SKILLS} - Type '/skills'
 4. ${categories.CONTACT} - Type '/contact'
 5. ${categories.PROJECTS} - Type '/projects'
-6. ${categories.CURIOSITY} - Type '/curosity'\n
+6. ${categories.CURIOSITY} - Type '/curiosity' \n
 Type any category name to learn more!`,
 
     "/commands": "Basic commands you can use:\n🗣️ hi/hello/hey: Greet me\n❓ how are you: Check on me\n⏰ time: Get current time\n📜 history: View chat history\n🗑️ clear: Clear chat history\n\nType '/help' to see all categories!",
 
     "/about": "Questions about HPTech:\n1.👤 who are you\n\n 2.what is your name\n\n 3.who is hptech\n\n 4.tell me about hptech\n\n5. how can i contact hptech\n\n 6.how can i contact hptech\n\n 7.🎯 what does hptech mean\n\n 8.⏳how long have you been coding\n\n 9.📍 location || Type any question or '/help' for more options!",
 
-    "/skills": "Ask about my technical skill:\n 1. what's your stack\n 2. what technologies do you use\n3. current project\n4. how long have you been coding\n5. can i hire you \n6. remote\n7. cloud platform\n8. current learning \n 9. what's is your strongest skill || Type any question or '/help' for more options!",
+    "/skills": "Ask about my technical skill:\n 1. what's your stack\n 2. what technologies do you use\n3. current project\n4. how long have you been coding\n5. can i hire you \n6. remote\n7. cloud platforms \n8. current learning \n 9. what's is your strongest skill || Type any question or '/help' for more options!",
 
     "/contact": "Ways to reach HPTech:\n🌐 portfolio\n📧 email\n🐱 github || Type any option to get more details!",
 
@@ -35,15 +35,17 @@ Type any category name to learn more!`,
 
 
     //curosity
+
     "what inspired you to code": "Curiosity and the desire to build useful things solving problems with tech excites me.",
     "are you open to internship": "Yes, if it offers learning opportunities and real world experience.",
     "how do you handle bugs": "Debugging calmly, using console logs, stack overflow and breaking down the problem.",
-    "do you write clean code ": "Yes, I try to write readable, maintainable code using best practices.",
+    "do you write clean code": "Yes, I try to write readable, maintainable code using best practices.",
     "what make you different": "I'm self-taught, consistent, passionate about clean code and always learning.",
     "do you work in team": "Yes, I love working in collaborative environmentsand using Git/Github to manage projects.",
 
 
     //contact 
+
     "portfolio": "You can reach HPTech via portfolio : https://hptech.netlify.app/contact",
     "email": "You can reach HPTech via email  : alimiazeez4@gmail.com",
     "github": "You can reach HPTech via github : https://github.com/HPTech4 ",
@@ -74,9 +76,9 @@ Type any category name to learn more!`,
     "what technologies do you use": "I use HTML, CSS, Javascript, React, Node.js, MongoDB,Express, TailwindCSS, Git, Docker and more",
     "current projects": "🤖 Mini Bot\n🌐 Portfolio\n💰 Expense tracker\n📱 Quiz app",
     "how long have you been coding": "I've been coding for 2+ years! 📈",
-    "can i hire you ": "Yes! I'm available for  freelance or part-time roles. You can contact methroughmy portfolio site🌐 https://hptech.netlify.app",
+    "can i hire you": "Yes! I'm available for  freelance or part-time roles. You can contact methroughmy portfolio site🌐 https://hptech.netlify.app",
     "remote": "Yes, I work remotely 🌍",
-    "cloud platforms " : "I'm learning AWS and Azure platfrom and planning to explore others like Huewei and Google Cloud soon",
+    "cloud platforms" : "I'm learning AWS and Azure platfrom and planning to explore others like Huewei and Google Cloud soon",
     "current learning": "I'm currently learning Cloud Computing to become a Cloud Developer, DevOps Engineer and Cloud Solution Architect",
     "what's is your strongest skill": "Problem-solving and frontend development. I also enjoy learning new  tools fast",
 
@@ -150,7 +152,7 @@ function displayMessage(text, sender) {
 // Handle user message
 function handleMessage() {
     const input = document.getElementById("input");
-    const message = input.value.trim();
+    const message = input.value.trim().toLowerCase();
 
     if (!message) return;
 
