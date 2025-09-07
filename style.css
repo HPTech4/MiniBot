@@ -8,7 +8,7 @@ header{
     text-align: center;
     background-color: rgb(159, 241, 159);
     padding: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 0;
     box-shadow: 0 0 10px #ccc;
 }
 .tagline{
@@ -33,16 +33,15 @@ span{
 #chat{
     max-width: 700px;
     margin: auto;
-    background-color: #fff;
+   
     padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #ccc;
+    
 }
 #messages {
-    height: 600px;
     overflow-y: auto;
     padding: 10px;
-    border: 1px solid #eee;
+    margin-top: 0;
+    margin-bottom: 75px;
     border-radius: 5px;
 }
 
@@ -51,21 +50,26 @@ span{
     padding: 5px 12px;
     border-radius: 8px;
     max-width: fit-content;
+    box-shadow:0 10px 20px rgb(0, 0, 0 0.5) ;
+    background-color: white;
+    padding: 15px;
+    
 }
 
 .user {
     text-align: right;
-    color: #fff;
-    background-color: #007bff;
+    color: #ffff;
     margin-left: auto;
     max-width: fit-content;
+    background-color: rgb(122, 122, 236);
+    
 }
 
 .bot {
     text-align: left;
-    color: #fff;
-    background-color: #28a745;
+    color: #ffff;
     max-width: fit-content;
+    background-color: #4caf50;
 }
 input{
     padding: 18px;
@@ -76,6 +80,7 @@ input{
     border: 1px solid #ccc;
     outline: none;
     box-shadow: 0 0 10px #ccc;
+    bottom: 0;
 }
 button{
     padding: 10px;
@@ -100,6 +105,16 @@ button{
 }
 .contain{
     display: flex;
+    bottom: 0%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 700px;
+    padding: 10px;
+    gap: 1px;
+    z-index: 100;
+    margin-top:95px;
 }
 @media (max-width: 600px) {
     .bot, .user{
@@ -110,7 +125,5 @@ button{
         font-size: 15px;
         padding: 12px;
     }
-    #messages {
-        height: 900px;
-    }
+    
 }
