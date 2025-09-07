@@ -4,7 +4,7 @@ FROM nginx:alpine
 # work directory inside nginx
 WORKDIR /usr/share/nginx/html/
 
-# Copy the application files to the nginx html directory
+# Copy the application files to the work dir
 COPY . .
 
 

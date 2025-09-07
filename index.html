@@ -9,17 +9,17 @@
 <body>
     <header>
         <h1> Welcome to HPTech Mini Bot </h1>
-        <p>If this is your first time here you can type <b>/help</b> for more info about this Mini Bot</p>
+        <p class="tagline"> Your Developer Portfolio Assistant</p>
+        <p class="instruction">If this is your first time here you can type <span>/help </span> for more info </p>
     </header>
     <main>
-        <div class="container">
-            <div id="chat">
-                <div id ="messages"> </div>
+        <div id="chat">
+            <div id ="messages"> </div>
+            <div class="contain">
                 <input type="text" name="" id="input" placeholder="Ask something .....">
                 <button id="btn"> Send </button>
-                <div class="typing-indicator hidden">Bot is typing...</div>
             </div>
-            
+            <div class="typing-indicator hidden">Bot is typing...</div>
         </div>
     </main>
     <script src="script.js"></script>

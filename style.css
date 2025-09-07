@@ -7,9 +7,28 @@ body{
 header{
     text-align: center;
     background-color: rgb(159, 241, 159);
-    padding: 25px;
-    margin-bottom: 25px;
+    padding: 1px;
+    margin-bottom: 15px;
     box-shadow: 0 0 10px #ccc;
+}
+.tagline{
+    font-size: 16px;
+    font-style: italic;
+    margin-top: -18px;
+    opacity: 0.9;
+    font-weight: 400;
+    letter-spacing:2.9px ;
+}
+.instruction{
+    margin-top: 15px;
+    font-size: 16px;
+    color: #000;
+}
+span{
+    font-weight: bold;
+    color: grey;
+    margin: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 #chat{
     max-width: 700px;
@@ -20,7 +39,7 @@ header{
     box-shadow: 0 0 10px #ccc;
 }
 #messages {
-    height: 500px;
+    height: 600px;
     overflow-y: auto;
     padding: 10px;
     border: 1px solid #eee;
@@ -28,8 +47,8 @@ header{
 }
 
 .message {
-   margin-bottom: 15px;
-    padding: 8px 12px;
+    margin-bottom: 25px;
+    padding: 5px 12px;
     border-radius: 8px;
     max-width: fit-content;
 }
@@ -39,18 +58,24 @@ header{
     color: #fff;
     background-color: #007bff;
     margin-left: auto;
+    max-width: fit-content;
 }
 
 .bot {
     text-align: left;
     color: #fff;
     background-color: #28a745;
+    max-width: fit-content;
 }
 input{
-    padding: 10px;
+    padding: 18px;
     font-size: 16px;
-    width: 70%;
+    width: 80%;
     margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-shadow: 0 0 10px #ccc;
 }
 button{
     padding: 10px;
@@ -72,4 +97,7 @@ button{
 
 .hidden {
     display: none;
+}
+.contain{
+    display: flex;
 }
